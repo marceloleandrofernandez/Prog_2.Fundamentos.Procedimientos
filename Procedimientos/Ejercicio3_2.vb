@@ -11,7 +11,7 @@
         Console.ReadKey()
 
     End Sub
-    Private Function sumarDias(fecha As Date, dias As Integer) As Date
-        Return fecha.AddDays(dias)
+    Private Function sumarDias(fecha As Date, dias As Integer) As String
+        Return fecha.AddDays(dias).ToShortDateString
     End Function
 End Module

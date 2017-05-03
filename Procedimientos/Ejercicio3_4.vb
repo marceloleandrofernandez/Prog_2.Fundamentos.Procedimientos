@@ -5,16 +5,18 @@
         Do
             Console.WriteLine("Ingrese Lado A: ")
             a = Console.ReadLine
+        Loop Until valido(a)
+        Do
             Console.WriteLine("Ingrese Lado B: ")
             b = Console.ReadLine
-        Loop Until valido(a, b)
+        Loop Until valido(b)
         Console.WriteLine("El cuadrado de la hipotenusa es {0}", hipotenusa(a, b))
 
         Console.ReadKey()
 
     End Sub
-    Private Function valido(A As Integer, B As Integer) As Boolean
-        If A > 0 And B > 0 Then
+    Private Function valido(N As Integer) As Boolean
+        If N > 0 Then
             Return True
         Else
             Return False

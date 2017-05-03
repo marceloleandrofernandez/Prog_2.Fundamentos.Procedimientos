@@ -8,9 +8,9 @@
 
     End Sub
     Sub fecha_actual()
-        Console.WriteLine("La fecha actual es : {0}", Date.Now)
+        Console.WriteLine("La fecha actual es : {0}", Date.Now.ToShortDateString)
     End Sub
-    Private Function fechaActual() As Date
-        Return Date.Now
+    Private Function fechaActual() As String
+        Return Date.Now.ToShortTimeString
     End Function
 End Module
