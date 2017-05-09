@@ -16,7 +16,7 @@
 
     End Sub
     Private Function valido(N As Integer) As Boolean
-        If N > 0 Then
+        If N > 0 and N == int(N) Then
             Return True
         Else
             Return False
