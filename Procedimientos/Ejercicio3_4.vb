@@ -23,8 +23,7 @@
         End If
     End Function
 
-    Private Function hipotenusa(A As Integer, B As Integer) As Integer
-
-        Return (A ^ 2) + (B ^ 2)
+    Private Function hipotenusa(A As Integer, B As Integer) As Single
+        Return Math.sqrt(A ^ 2 + B ^ 2)
     End Function
 End Module
